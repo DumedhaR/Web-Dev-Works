@@ -5,26 +5,64 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<title>Home</title>
-	<!-- Boostrap-css -->
+		<!-- Boostrap-css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style type="text/css">
+    	#nav-head{
+            font-size: 1.5rem;
+    	}
+    </style>
 </head>
 <body>
 	<header>
-		<nav id="nav-bar" class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<div class="navbar-brand">
-						
-					</div>
-				</div>
-				<div id="collapsable-nav">
-					
-				</div>
-			</div>
-		</nav>
-	</header>
+	<!-- Start-NavBar -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
+            <div class="container-fluid mx-2 py-2">
+                <a class="navbar-brand text-white" href="#"><span id="nav-head">Food, LLC</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="  false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 text-center">
+                        <li class="nav-item border-bottom d-md-none"><a class="nav-link text-white " aria-current="page" href="#chicken">Chicken</a></li>
+                        <li class="nav-item border-bottom d-md-none"><a class="nav-link text-white" aria-current="page" href="#beef">Beef</a></li>
+                        <li class="nav-item d-md-none"><a class= "nav-link text-white" aria-current="page" href="#sushi">Sushi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	<!-- End-NavBar -->
+	</header>
+    <div class="container-fluid">
+	    <h1 class="text-center mt-5 mb-5" id="top-header">Our Menu</h1>
+        <div class="container-fluid py-4">
+    <div class="row">
+    	<div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+    	    <div class="mx-0.5 mb-4 p-3 bg-light border border-dark card-view">
+    		    <h3 id="chicken" class="text-center">Chicken</h3>
+    		    <p class="pt-1">Chicken is the most common type of poultry in the world. Due to the relative ease and low cost of raising chickens in comparison to mammals such as cattle or hogs, chicken meat and chicken eggs have become prevalent in numerous cuisines.</p>
+    		    <a href="#top-header">Back to Top</a>
+    	    </div>
+    	</div>
+    	<div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+    	    <div class ="mx-0.5 mb-4 p-3 bg-light border border-dark card-view">
+    		    <h3 id="beef" class="text-center">Beef</h3>
+    		    <p class="pt-1">"Beef is the culinary name for meat from cattle. In prehistoric times, humans hunted aurochs and later domesticated them. Since that time, numerous breeds of cattle have been bred specifically for the quality or quantity of their meat.</p>
+    		    <a href="#top-header">Back to Top</a>
+    	    </div>
+    	</div>
+    	<div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+    		<div class="mx-0.5 mb-4 p-3 bg-light border border-dark card-view">
+    		    <h3 id="sushi" class="text-center">Sushi</h3>
+    		    <p class="pt-1">Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and their presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.</p>
+    		    <a href="#top-header" class="text-center">Back to Top</a>
+    	    </div>
+        </div>
+	</div>
+</div>
+	</div>
   <!-- Boostrap-js -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
